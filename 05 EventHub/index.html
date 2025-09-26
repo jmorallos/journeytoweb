@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Hub</title>
+    <style>
+        :root {
+            /* Elegant & Minimal */
+            --white: #FFFDF0;
+            --light-gray: #DCDCDC;
+            --medium-gray: #A6A6A6;
+            --dark-gray: #595959;
+            --black: #2b2a2a;
+
+            /* Accent */
+            --muted-gold: #C2A878;
+            --deep-navy: #2C3E50;
+            --muted-terracotta: #C97B63;
+            --dusty-rose: #C8A2A2;
+            --soft-sage: #657567;
+        }
+
+        *,
+        *::after,
+        *::before {
+            box-sizing: inherit;
+        }
+
+        html {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: var(--white);
+        }
+
+        body {
+            color: var(--black);
+        }
+
+        a,
+        a:link {
+            color: var(--black);
+        }
+
+        a:visited {
+            color: var(--black);
+        }
+
+        a:hover {
+            color: var(--muted-terracotta);
+        }
+
+        a:active {
+            color: var(--muted-gold);
+        }
+
+        .banner {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="banner" role="banner">
+        <h1>Event Hub</h1>
+        <nav role="navigation">
+            <ul role="list">
+                <li><a href="#upcoming-events">Upcoming Events</a></li>
+                <li><a href="#past-events">Past Events</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <article>
+                <h3>Haraya</h3>
+                <p>Real Estate Circle 2025: Scheduled on September 26-27 at Rizal Park Hotel.</p>
+                <img max-width="400" src="haraya.webp" alt="People gathering in the front of a castle">
+            </article>
+            <article>
+                <h3>Doggo x World Pet Expo</h3>
+                <p>A fun pet exhibition scheduled on September 27-28 at the World Trade Center in Pasay City.</p>
+                <img max-width="400" src="doggo-x-world.webp" alt="A picture of a dog in the stage along side with the little girsf">
+            </article>
+        </section>
+        
+        <section id="past-events">
+            <h2>Past Events</h2>
+            <article>
+                <h3>The Great Fire of London</h3>
+                <p>A devastating fire that swept through London, England, destroying a significant portion of the city, including homes, churches, and landmarks like St. Paul's Cathedral. The fire lasted for several days and led to major changes in building codes and firefighting practices.</p>
+                <img src="great-fire-of-london.webp" alt="A devastating fire that swept through London, destroying a significant portion of the city">
+            </article>
+            <article>
+                <h3>Declartion of Independence</h3>
+                <p>A pivotal event in American history where representatives of the thirteen American colonies signed the Declaration of Independence, formally declaring their independence from Great Britain. This act marked a key step in the formation of the United States of America.</p>
+                <img src="declaration-of-independence.webp" alt="Representatives of the thirteen American colonies signed the Declaration of Independence">
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2025 Event Hub Publishing</p>
+    </footer>
+</body>
+
+</html>

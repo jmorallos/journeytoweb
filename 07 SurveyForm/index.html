@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsightPulse Survey Form</title>
+    <meta name="description"
+        content="InsightPulse survey form. We value your opinion! Please take a few minutes to fill out this survey and help us improve our services.">
+
+    <meta property="og:title" content="InsightPulse Survey Form">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.submitsample.com/survey">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form &ndash; InsightPulse</h1>
+        <p id="description">"Your Voice, Your Impact."</p>
+    </header>
+
+    <main>
+        <form id="survey-form" method="POST" action="https://www.submitsample.com">
+
+            <!-- Section 1 -->
+            <fieldset>
+                <legend>
+                    <h2>Personal Information</h2>
+                </legend>
+
+                <label for="name">Name
+                    <span aria-hidden="true">*</span>
+                    <span class="sr-only">(required)</span>
+                </label>
+                <input type="text" id="name" name="name" placeholder="Ex. John Doe" required>
+
+                <label for="email">Email
+                    <span aria-hidden="true">*</span>
+                    <span class="sr-only">(required)</span>
+                </label>
+                <input type="email" id="email" name="email" placeholder="johndoe@example.com" required>
+
+                <label for="number">Age
+                    <span aria-hidden="true">*</span>
+                    <span class="sr-only">(required)</span>
+                </label>
+                <input type="number" id="number" name="age" min="12" max="120" placeholder="18" required>
+            </fieldset>
+
+            <!-- Section 2 -->
+            <fieldset>
+                <legend>
+                    <h2>Background</h2>
+                </legend>
+                <label for="dropdown">Which one best describes you?</label>
+                <select id="dropdown" name="role">
+                    <option value="">Select</option>
+                    <option value="student">Student</option>
+                    <option value="professional">Professional</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+
+            <!-- Section 3 -->
+            <fieldset>
+                <legend>
+                    <h2>Service Usage</h2>
+                </legend>
+                <p>How often do you use our services?</p>
+
+                <input type="radio" id="daily" name="usage" value="daily">
+                <label for="daily">Daily</label>
+
+                <input type="radio" id="weekly" name="usage" value="weekly">
+                <label for="weekly">Weekly</label>
+
+                <input type="radio" id="monthly" name="usage" value="monthly">
+                <label for="monthly">Monthly</label>
+
+                <input type="radio" id="rarely" name="usage" value="rarely">
+                <label for="rarely">Rarely</label>
+            </fieldset>
+
+            <!-- Section 4 -->
+            <fieldset>
+                <legend>
+                    <h2>Service Feedback</h2>
+                </legend>
+                <p>What do you like most about our services? (select all that apply)</p>
+
+                <input type="checkbox" id="ease-of-use" name="likes" value="ease-of-use">
+                <label for="ease-of-use">Ease of Use</label>
+
+                <input type="checkbox" id="design-and-layout" name="likes" value="design-and-layout">
+                <label for="design-and-layout">Design and Layout</label>
+
+                <input type="checkbox" id="speed-and-performance" name="likes" value="speed-and-performance">
+                <label for="speed-and-performance">Speed and Performance</label>
+
+                <input type="checkbox" id="customer-support" name="likes" value="customer-support">
+                <label for="customer-support">Customer Support</label>
+
+                <input type="checkbox" id="checkbox-other" name="likes" value="other">
+                <label for="checkbox-other">Other</label>
+            </fieldset>
+
+            <!-- Section 5 -->
+            <fieldset>
+                <legend>
+                    <h2>Additional Comments</h2>
+                </legend>
+                <label for="comments">Your thoughts</label>
+                <textarea id="comments" name="comments" placeholder="Share your thoughts or suggestions here..."
+                    cols="30" rows="10"></textarea>
+            </fieldset>
+
+            <button type="submit" id="submit">Submit Survey</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;2025 InsightPulse</p>
+    </footer>
+</body>
+
+</html>
